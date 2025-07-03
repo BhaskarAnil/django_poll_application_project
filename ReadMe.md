@@ -84,6 +84,4 @@ python manage.py runserver
 - Visit `http://127.0.0.1:8000/` to access the polls app.
 - Visit `http://127.0.0.1:8000/admin/` to access the admin site.
 
-## License
 
-This project is for educational purposes.
