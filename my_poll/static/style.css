@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* base html  */
+header {
+  background-color: #3992eb;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* index.html */
+.questions-list {
+  padding: 40px;
+}
+.questions-list li {
+  font-size: 2rem;
+  list-style: decimal;
+  margin: 10px 0;
+}
+.questions-list li a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #3b78b6;
+  font-weight: bold;
+}
+.questions-list li a:hover {
+  color: #1a5f8c;
+  text-decoration: underline;
+}
+.question-block {
+  margin: 20px;
+}
+#question {
+  color: #000000;
+  font-size: 2.5rem;
+  margin: 20px 0px;
+}
+.choices {
+  margin: 10px 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#choice {
+  font-size: 1.7rem;
+  font-weight: 800;
+  list-style: none;
+  margin: 10px 0;
+}
+#vote-button {
+  margin-top: 30px;
+  background-color: #19501d;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}

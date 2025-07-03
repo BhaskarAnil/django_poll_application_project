@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Django stuff:
+db.sqlite3
+*.sqlite3
+*.log
+
+# Environment variables
+.env
+*.env
+
+# Virtual environments
+venv/
+env/
+ENV/
+django/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Static and media files (if you use these for uploads)
+# staticfiles/
+# media/
+
+# Migrations cache (optional, uncomment if you want to ignore migration files)
+# my_poll/migrations/
+# !my_poll/migrations/__init__.py

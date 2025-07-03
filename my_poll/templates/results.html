@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<div class="question-block">
+  <h1 id="question">{{ question.question }}</h1>
+
+  <ul>
+    {% for choice in question.choice_set.all %}
+    <li id="choice">
+      {{ choice.choice }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <a id="vote-button" href="{% url 'detail' question.id %}">Vote again?</a>
+  <a id="vote-button" href="{% url 'index' %}">Vote another question</a>
+</div>
+{%endblock%}

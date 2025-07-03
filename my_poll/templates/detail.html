@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %}
+<div class="question-block">
+  <h1 id="question">{{ question.question }}</h1>
+
+  {% if error_message %}
+  <p><strong>{{ error_message }}</strong></p>
+  {% endif %}
+
+  <form action="{% url 'vote' question.id %}" method="post">
+    {% csrf_token %} {% for choice in question.choice_set.all %}
+    <input
+      class="choices"
+      type="radio"
+      name="choice"
+      id="choice{{ forloop.counter }}"
+      value="{{ choice.id }}"
+    />
+    <label id="choice" for="choice{{ forloop.counter }}"
+      >{{ choice.choice }}</label
+    ><br />
+    {% endfor %}
+    <input id="vote-button" type="submit" value="Vote" />
+  </form>
+  <h3>Published on : {{question.date}}</h3>
+</div>
+{%endblock%}
